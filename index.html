@@ -11,7 +11,40 @@
 a {
   text-decoration: none;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+}
 </style>
+  <button id="play-button">website music idk if this works i cba lol</button>
+
+  <audio id="audio-file" src="https://r2.guns.lol/e7550c60-8181-47e0-b60c-b2eea02be05b.mp3" preload="auto"></audio>
+
+  <script>
+    const playButton = document.getElementById('play-button');
+    const audioFile = document.getElementById('audio-file');
+
+    playButton.addEventListener('click', () => {
+      audioFile.play();
+    });
+  </script>
+</body>
+</html>
 <body style="background-color:black;">
 <center>
 <h1 style="background-color:white;">hello 
@@ -24,6 +57,5 @@ check out <a href="https://csyn.me">csyn.me</a> or <a href="https://knives.rip">
 <h1 style="background-color:black;color:powderblue;">
 ok bye ur weird for reading all this fucking creep </h1>
 </center>
-<footer> ok bye </footer>
 </body>
 </html>
